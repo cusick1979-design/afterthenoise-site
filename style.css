@@ -13,13 +13,17 @@ body {
   padding: 20px;
 }
 
+/* Header and logo */
 header {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 header .logo {
-  width: 120px;
+  width: 200px;          /* Bigger logo */
+  max-width: 90%;        /* Responsive */
+  height: auto;          /* Keep ratio */
   margin-bottom: 15px;
+  filter: drop-shadow(0 0 8px #ff6f61); /* Glow effect to pop on dark background */
 }
 
 h1 {
@@ -27,11 +31,13 @@ h1 {
   color: #ff6f61;
 }
 
+/* Intro text */
 .intro {
   font-size: 1.2em;
   margin-bottom: 30px;
 }
 
+/* About section */
 section.about {
   max-width: 700px;
   margin: 0 auto 40px;
@@ -48,6 +54,7 @@ section.about p {
   font-size: 1em;
 }
 
+/* Social icons */
 section.social {
   margin-bottom: 50px;
 }
@@ -58,11 +65,12 @@ section.social {
   height: 50px;
   margin: 0 10px;
   background-size: cover;
-  transition: transform 0.2s;
+  transition: transform 0.2s, filter 0.2s;
 }
 
 .icon:hover {
   transform: scale(1.2);
+  filter: drop-shadow(0 0 6px #ff6f61);
 }
 
 /* Social icon backgrounds */
@@ -73,6 +81,7 @@ section.social {
 .icon.skool { background-image: url('icons/skool.png'); }
 .icon.game { background-image: url('icons/game.png'); }
 
+/* Footer */
 footer {
   border-top: 1px solid #333;
   padding: 20px 0;
@@ -89,7 +98,7 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* Responsive */
+/* Responsive adjustments */
 @media (max-width: 600px) {
   h1 { font-size: 1.5em; }
   .icon { width: 40px; height: 40px; margin: 0 5px; }
