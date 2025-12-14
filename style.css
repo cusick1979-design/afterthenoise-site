@@ -53,3 +53,58 @@ footer {
   font-size: 0.9em;
   color: #777;
 }</body></html>
+/* --- About Section --- */
+.about {
+  margin: 60px auto;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+}
+
+.about h2 {
+  color: #00e0e0;
+  font-weight: 600;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.about p {
+  line-height: 1.8em;
+  font-size: 1.1em;
+}
+
+/* --- Social Icon Links --- */
+.social {
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform .2s, opacity .2s;
+  opacity: 0.8;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+/* Individual platform images */
+.youtube   { background-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg'); }
+.instagram { background-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg'); }
+.tiktok    { background-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg'); }
+.skool     { background-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/googleclassroom.svg'); }
+.game      { background-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/steam.svg'); }
+
+/* Optional: tint the icons teal */
+.icon {
+  filter: invert(68%) sepia(97%) saturate(397%) hue-rotate(142deg) brightness(101%) contrast(94%);
+}
