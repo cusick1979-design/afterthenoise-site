@@ -1,110 +1,97 @@
-<!doctype html><html><head></head><body>/* --- After The Noise Styles --- */
-
-body {
+/* Reset some basics */
+body, h1, h2, p {
   margin: 0;
   padding: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: #0a0a0a;
-  color: #e0e0e0;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  line-height: 1.6;
+  background: #121212;
+  color: #f5f5f5;
   text-align: center;
+  padding: 20px;
 }
 
 header {
-  padding: 40px 20px 10px;
+  margin-bottom: 30px;
 }
 
-.logo {
-  width: 80%;
-  max-width: 800px;
-  border-radius: 8px;
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+header .logo {
+  width: 120px;
+  margin-bottom: 15px;
 }
 
 h1 {
-  color: #00e0e0;
-  font-weight: 600;
-  margin-top: 10px;
-  letter-spacing: 2px;
+  font-size: 2em;
+  color: #ff6f61;
 }
 
 .intro {
-  width: 80%;
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+section.about {
   max-width: 700px;
-  margin: 30px auto;
-  font-size: 1.1em;
-  line-height: 1.6;
+  margin: 0 auto 40px;
+  text-align: left;
+  padding: 0 20px;
 }
 
-.links a {
-  display: inline-block;
-  margin: 10px 15px;
-  color: #00e0e0;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-
-.links a:hover {
-  color: #ffffff;
-}
-
-footer {
-  margin-top: 50px;
-  font-size: 0.9em;
-  color: #777;
-}</body></html>
-/* --- About Section --- */
-.about {
-  margin: 60px auto;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-}
-
-.about h2 {
-  color: #00e0e0;
-  font-weight: 600;
+section.about h2 {
+  color: #ff6f61;
   margin-bottom: 10px;
-  letter-spacing: 1px;
 }
 
-.about p {
-  line-height: 1.8em;
-  font-size: 1.1em;
+section.about p {
+  font-size: 1em;
 }
 
-/* --- Social Icon Links --- */
-.social {
-  margin: 50px auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 25px;
+section.social {
+  margin-bottom: 50px;
 }
 
 .icon {
-  width: 48px;
-  height: 48px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  transition: transform .2s, opacity .2s;
-  opacity: 0.8;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  background-size: cover;
+  transition: transform 0.2s;
 }
 
 .icon:hover {
-  transform: scale(1.1);
-  opacity: 1;
+  transform: scale(1.2);
 }
 
-/* Individual platform images */
-.youtube   { background-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg'); }
-.instagram { background-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg'); }
-.tiktok    { background-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg'); }
-.skool     { background-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/googleclassroom.svg'); }
-.game      { background-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/steam.svg'); }
+/* Social icon backgrounds */
+.icon.youtube { background-image: url('icons/youtube.png'); }
+.icon.instagram { background-image: url('icons/instagram.png'); }
+.icon.tiktok { background-image: url('icons/tiktok.png'); }
+.icon.x { background-image: url('icons/x.png'); }
+.icon.skool { background-image: url('icons/skool.png'); }
+.icon.game { background-image: url('icons/game.png'); }
 
-/* Optional: tint the icons teal */
-.icon {
-  filter: invert(68%) sepia(97%) saturate(397%) hue-rotate(142deg) brightness(101%) contrast(94%);
+footer {
+  border-top: 1px solid #333;
+  padding: 20px 0;
+  font-size: 0.9em;
+  color: #aaa;
+}
+
+footer a {
+  color: #ff6f61;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  h1 { font-size: 1.5em; }
+  .icon { width: 40px; height: 40px; margin: 0 5px; }
+  section.about { padding: 0 10px; }
 }
