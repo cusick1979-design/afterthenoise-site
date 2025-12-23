@@ -168,6 +168,11 @@
   white-space: pre-line;
 }
 
+.accordion-content.open {
+  padding: 0 18px 18px;
+}
+
+
     .chip {
       font-size: 12px;
       padding: 4px 10px;
@@ -612,8 +617,6 @@ To be continued.....
         </div>
       </div>
 
-    </div>
-
   </div>
 </section>
   <script>
@@ -633,11 +636,11 @@ To be continued.....
       if (!isOpen) {
         content.classList.add('open');
         content.style.maxHeight = content.scrollHeight + 'px';
-      }
-    });
+       });
   });
-    });
+});
 </script>
+
 
 
 <footer>
@@ -730,7 +733,8 @@ I carry that.
 
   <p><strong>And to my son —</strong><br>
     You are the reason this work has weight
-    </section>
+</p>
+</section>
 </body>
 </html>
 
