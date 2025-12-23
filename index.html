@@ -157,19 +157,16 @@
       cursor: pointer;
       text-align: left;
     }
-
-    .accordion-content {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height .35s ease, padding .3s ease;
-      padding: 0 18px;
-      line-height: 1.7;
-      color: #d0d0d0;
-    }
-
-    .accordion-content.open {
-      padding: 0 18px 18px;
-    }
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .35s ease, padding .3s ease;
+  padding: 0 18px;
+  line-height: 1.7;
+  color: #d0d0d0;
+  text-align: left;
+  white-space: pre-line;
+}
 
     .chip {
       font-size: 12px;
@@ -189,9 +186,6 @@
       color: #aaa;
       text-align: center;
     }
-    .accordion-content {
-  text-align: left;
-  white-space: pre-line;
 }
 .author-note {
   margin-top: 60px;
