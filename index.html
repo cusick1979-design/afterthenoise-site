@@ -186,7 +186,7 @@
       color: #aaa;
       text-align: center;
     }
-}
+    
 .author-note {
   margin-top: 60px;
   padding-top: 20px;
@@ -303,7 +303,7 @@
           <span>+</span>
         </button>
         <div class="accordion-content">
-          <p><strong>CHAPTER ONE — Don’t Lie to the Map</strong>
+          <strong>CHAPTER ONE — Don’t Lie to the Map</strong>
 
 <p>Nobody claps when you decide to stop running.</p>
 
@@ -617,6 +617,7 @@ To be continued.....
   </div>
 </section>
   <script>
+  document.addEventListener('DOMContentLoaded', () => {  
   document.querySelectorAll('.accordion-header').forEach(header => {
     header.addEventListener('click', () => {
       const content = header.nextElementSibling;
@@ -635,6 +636,7 @@ To be continued.....
       }
     });
   });
+    });
 </script>
 
 
@@ -728,3 +730,7 @@ I carry that.
 
   <p><strong>And to my son —</strong><br>
     You are the reason this work has weight
+    </section>
+</body>
+</html>
+
